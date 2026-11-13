@@ -3,13 +3,13 @@
 **EXPO** is a software for **crystal structure solution from powder diffraction data**,
 developed at the [Institute of Crystallography (IC-CNR), Bari](https://www.ic.cnr.it/), Italy.
 
-EXPO2014, the latest version of EXPO2009, is able to perform all the steps of the
-structure solution process by powder diffraction data:
+EXPO is able to perform all the steps of the structure solution process by powder
+diffraction data:
 
 - **indexing** of the diffraction pattern;
 - **space group determination**;
 - **estimation of the integrated intensities** of the reflections;
-- **structure solution** by Direct Methods and/or by direct-space / hybrid approaches;
+- **structure solution** by Direct Methods and/or by direct-space approaches;
 - **model refinement** by the Rietveld technique.
 
 A graphical interface supports each step and allows the crystal structure to be
@@ -22,7 +22,13 @@ visualized and modified during the whole process.
 
 ## Authors
 
-A. Altomare, C. Cuocci, C. Giacovazzo, A. Moliterni, R. Rizzi, N. Corriero and A. Falcicchio
+[A. Altomare](https://www.ic.cnr.it/staff/altomare-angela/),
+[C. Cuocci](https://www.ic.cnr.it/staff/cuocci-corrado/),
+C. Giacovazzo,
+[A. Moliterni](https://www.ic.cnr.it/staff/moliterni-anna/),
+[R. Rizzi](https://www.ic.cnr.it/staff/rizzi-rosanna/),
+[N. Corriero](https://www.ic.cnr.it/staff/corriero-nicola/)
+and A. Falcicchio
 
 Institute of Crystallography – CNR, via Amendola 122/o, 70126 Bari, Italy
 
