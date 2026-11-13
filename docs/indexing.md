@@ -276,8 +276,8 @@ for a triclinic cell can take a long time, depending on the program.
 
 ### Unit cell content
 
-After the indexing, select a cell and click **OK** to proceed to the space group
-determination. The following dialog appears:
+After the indexing, select a cell and click **OK** to proceed to the
+[space group determination](space-group.md). The following dialog appears:
 
 ![Cell content](images/indexing/cell_content.png)
 

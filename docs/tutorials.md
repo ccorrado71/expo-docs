@@ -116,7 +116,7 @@ command.
 
 Click **OK** to perform the space group determination, then click **Next**. At the end,
 EXPO lists the extinction symbols and space groups compatible with the lattice symmetry,
-ranked by probability:
+ranked by probability (see [Space group determination](space-group.md)):
 
 ![Space group determination](images/tutorials/cime_space_group_list.png)
 
