@@ -27,12 +27,14 @@ nav:
   - Home: index.md
   - Download: download.md
   - Installation: installation.md
+  - Tutorials: tutorials.md
 
 markdown_extensions:
   - admonition
   - attr_list
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tilde
   - pymdownx.highlight
   - pymdownx.arithmatex:
       generic: true

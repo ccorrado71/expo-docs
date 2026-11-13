@@ -335,4 +335,5 @@ Linux and macOS, `C:\Users\<username>\share\expo\examples` on Windows), so that
 they can be run without modifying the original files.
 
 Then click the ![Next](images/next.png){ height="20" } icon on the toolbar to perform
-the steps of the structure solution.
+the steps of the structure solution. The three examples are described step by step in
+the [Tutorials](tutorials.md).

@@ -13,6 +13,7 @@ PAGES=(
   index.md
   download.md
   installation.md
+  tutorials.md
 )
 
 # MkDocs admonitions (!!! / ???) are not understood by pandoc:
