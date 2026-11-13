@@ -77,7 +77,8 @@ At the end, EXPO shows the indexing results:
 ![Indexing results](images/tutorials/cime_cell_list.png)
 
 Click **OK** to accept the selected cell parameters and proceed to the space group
-determination.
+determination. The indexing procedure and the evaluation of the solutions are
+described in detail in [Indexing](indexing.md).
 
 ### Unit cell content
 

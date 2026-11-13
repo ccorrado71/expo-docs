@@ -26,7 +26,7 @@ The input file should contain at least two commands:
     the type of radiation, when different from standard laboratory X-rays.
 
 Further commands, with their directives, are added according to the tasks to perform:
-mainly indexing, space group determination, structure solution by Direct Methods or by
+mainly [indexing](indexing.md), space group determination, structure solution by Direct Methods or by
 direct-space methods, and other non-default strategies.
 
 ## Example

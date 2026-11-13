@@ -29,6 +29,7 @@ nav:
   - Installation: installation.md
   - Tutorials: tutorials.md
   - Preparing the input file: input-file.md
+  - Indexing: indexing.md
 
 markdown_extensions:
   - admonition
