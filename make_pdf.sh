@@ -1,6 +1,6 @@
 #!/bin/bash
 # Generate the EXPO PDF manual from the Markdown sources.
-# Requires: pandoc, xelatex (texlive-xetex)
+# Requires: pandoc, xelatex (texlive-xetex), python3
 #
 # Usage: bash make_pdf.sh [output.pdf]
 
@@ -11,10 +11,43 @@ OUT="${1:-${SCRIPT_DIR}/expo_manual.pdf}"
 # Keep this list in the same order as the 'nav' section of mkdocs.yml
 PAGES=(
   index.md
+  installation.md
 )
 
+# MkDocs admonitions (!!! / ???) are not understood by pandoc:
+# convert them to block quotes with a bold title.
+convert_admonitions() {
+  python3 - "$1" <<'EOF'
+import re, sys
+head = re.compile(r'^(!!!|\?\?\?\+?)\s+(\w+)(?:\s+"([^"]*)")?\s*$')
+out, quote = [], False
+for line in open(sys.argv[1], encoding="utf-8").read().splitlines():
+    m = head.match(line)
+    if m:
+        out.append("> **" + (m.group(3) or m.group(2).capitalize()) + "**")
+        out.append(">")
+        quote = True
+    elif quote and (line.startswith("    ") or not line.strip()):
+        out.append(("> " + line[4:]).rstrip())
+    else:
+        quote = False
+        out.append(line)
+print("\n".join(out))
+EOF
+}
+
+TMP_DIR="$(mktemp -d)"
+trap 'rm -rf "${TMP_DIR}"' EXIT
+SOURCES=()
+for page in "${PAGES[@]}"; do
+  dest="${TMP_DIR}/${page//\//_}"
+  convert_admonitions "${SCRIPT_DIR}/docs/${page}" > "${dest}"
+  SOURCES+=("${dest}")
+done
+
 pandoc \
-  "${PAGES[@]/#/${SCRIPT_DIR}/docs/}" \
+  "${SOURCES[@]}" \
+  --from=markdown-implicit_figures+link_attributes \
   --resource-path="${SCRIPT_DIR}/docs" \
   -o "${OUT}" \
   --pdf-engine=xelatex \

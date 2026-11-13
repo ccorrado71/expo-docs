@@ -25,9 +25,11 @@ theme:
 
 nav:
   - Home: index.md
+  - Installation: installation.md
 
 markdown_extensions:
   - admonition
+  - attr_list
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight
