@@ -1,0 +1,20 @@
+# MkDocs build output
+site/
+
+# Generated PDF manual
+expo_manual.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.cache/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
