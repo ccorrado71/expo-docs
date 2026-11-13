@@ -28,10 +28,12 @@ nav:
   - Download: download.md
   - Installation: installation.md
   - Tutorials: tutorials.md
+  - Preparing the input file: input-file.md
 
 markdown_extensions:
   - admonition
   - attr_list
+  - def_list
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tilde

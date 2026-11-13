@@ -61,7 +61,8 @@ synchrotron
 The `%data` command provides the minimal required information: the name of the data
 file, the wavelength and the type of radiation (when different from laboratory X-rays).
 `%ntreor` activates the indexing process and `%continue` the *ab initio* structure
-solution.
+solution. More information on the input file is given in
+[Preparing the input file](input-file.md).
 
 ### Indexing
 
