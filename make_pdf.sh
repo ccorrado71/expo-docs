@@ -11,6 +11,7 @@ OUT="${1:-${SCRIPT_DIR}/expo_manual.pdf}"
 # Keep this list in the same order as the 'nav' section of mkdocs.yml
 PAGES=(
   index.md
+  download.md
   installation.md
 )
 

@@ -25,6 +25,7 @@ theme:
 
 nav:
   - Home: index.md
+  - Download: download.md
   - Installation: installation.md
 
 markdown_extensions:
