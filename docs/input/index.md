@@ -17,7 +17,8 @@ This section describes:
 - the structure and syntax of the input file (this page);
 - the [list of commands](commands.md), with the rules on their order;
 - the [`%data` command](data.md), which supplies the experimental data and the basic
-  crystallographic information.
+  crystallographic information;
+- the [structure files](structure-files.md) that EXPO can import and export.
 
 The directives of the other commands are described in the sections of the corresponding
 steps: [Indexing](../indexing.md), [Space group determination](../space-group.md),

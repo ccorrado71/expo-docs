@@ -17,6 +17,7 @@ PAGES=(
   input/index.md
   input/commands.md
   input/data.md
+  input/structure-files.md
   indexing.md
   space-group.md
   direct-methods/index.md

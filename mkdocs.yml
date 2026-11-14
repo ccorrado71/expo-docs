@@ -32,6 +32,7 @@ nav:
     - Preparing the input file: input/index.md
     - Commands: input/commands.md
     - The %data command: input/data.md
+    - Structure files: input/structure-files.md
   - Indexing: indexing.md
   - Space Group Determination: space-group.md
   - Direct Methods:

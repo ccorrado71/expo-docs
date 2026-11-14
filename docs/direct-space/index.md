@@ -49,8 +49,9 @@ Load it with **File → Load & Go**.
   The command can be repeated to import more fragments (see
   [The `%fragment` command](directives.md#the-fragment-command)). Other supported
   formats include MOPAC (`.mop`), Tripos Sybyl (`.mol2`, `.ml2`), CIF (`.cif`),
-  Protein Data Bank (`.pdb`), Fenske-Hall Z-matrix (`.zmt`), EXPO free fractional
-  format (`.frac`), XYZ (`.xyz`) and SHELX (`.ins`, `.res`).
+  Protein Data Bank (`.pdb`), Fenske-Hall Z-matrix (`.fhz`), free fractional format
+  (`.frac`), XYZ (`.xyz`), SDF (`.sdf`) and SHELX (`.ins`, `.res`); see
+  [Structure files](../input/structure-files.md).
 - `%sanneal` opens the simulated annealing interface.
 
 Instead of `%fragment`, the starting model can be imported from the graphical interface
