@@ -92,7 +92,8 @@ The starting model can be prepared in two ways, or by combining them.
    Volume C.
 2. **By geometry optimization.** Build the molecule with a molecular editor, pre-optimize
    it with a force field and refine it with *ab initio*, semi-empirical or DFT
-   calculations (MOPAC, Gaussian, GAMESS, NWChem, …). Free editors include
+   calculations (MOPAC, Gaussian, GAMESS, NWChem, …); see
+   [Geometry optimization](../tools/geometry-optimization.md). Free editors include
    [Avogadro](https://avogadro.cc/), [Gabedit](https://gabedit.sourceforge.net/),
    ACD/ChemSketch and MarvinSketch.
 

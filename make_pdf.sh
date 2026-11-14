@@ -29,6 +29,9 @@ PAGES=(
   direct-space/directives.md
   direct-space/parallel.md
   rietveld.md
+  tools/index.md
+  tools/geometry-optimization.md
+  tools/bond-valence.md
 )
 
 # MkDocs admonitions (!!! / ???) are not understood by pandoc:
@@ -65,7 +68,7 @@ done
 pandoc \
   "${SOURCES[@]}" \
   --from=markdown-implicit_figures+link_attributes \
-  --resource-path="${SCRIPT_DIR}/docs:${SCRIPT_DIR}/docs/direct-methods:${SCRIPT_DIR}/docs/direct-space:${SCRIPT_DIR}/docs/input" \
+  --resource-path="${SCRIPT_DIR}/docs:${SCRIPT_DIR}/docs/direct-methods:${SCRIPT_DIR}/docs/direct-space:${SCRIPT_DIR}/docs/input:${SCRIPT_DIR}/docs/tools" \
   -o "${OUT}" \
   --pdf-engine=xelatex \
   --toc \

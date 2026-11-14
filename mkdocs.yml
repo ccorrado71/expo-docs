@@ -46,6 +46,10 @@ nav:
     - Directives and restraints: direct-space/directives.md
     - Parallel execution: direct-space/parallel.md
   - Rietveld Refinement: rietveld.md
+  - Tools:
+    - Overview: tools/index.md
+    - Geometry optimization: tools/geometry-optimization.md
+    - Bond valence sum: tools/bond-valence.md
 
 markdown_extensions:
   - admonition
