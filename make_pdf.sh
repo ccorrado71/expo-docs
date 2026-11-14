@@ -32,6 +32,8 @@ PAGES=(
   tools/index.md
   tools/geometry-optimization.md
   tools/bond-valence.md
+  appendix/atomic-volumes.md
+  appendix/extinction-symbols.md
 )
 
 # MkDocs admonitions (!!! / ???) are not understood by pandoc:
@@ -52,7 +54,11 @@ for line in open(sys.argv[1], encoding="utf-8").read().splitlines():
     else:
         quote = False
         out.append(line)
-print("\n".join(out))
+# Long DOIs do not fit the line: typeset them as breakable URLs (xurl package)
+doi = re.compile(r'\[(doi:[^\]]+)\]\((https://doi\.org/[^)\s]+)\)')
+text = "\n".join(out)
+text = doi.sub(lambda m: r"\href{%s}{\nolinkurl{%s}}" % (m.group(2).replace("%", r"\%"), m.group(1)), text)
+print(text)
 EOF
 }
 
@@ -68,7 +74,7 @@ done
 pandoc \
   "${SOURCES[@]}" \
   --from=markdown-implicit_figures+link_attributes \
-  --resource-path="${SCRIPT_DIR}/docs:${SCRIPT_DIR}/docs/direct-methods:${SCRIPT_DIR}/docs/direct-space:${SCRIPT_DIR}/docs/input:${SCRIPT_DIR}/docs/tools" \
+  --resource-path="${SCRIPT_DIR}/docs:${SCRIPT_DIR}/docs/direct-methods:${SCRIPT_DIR}/docs/direct-space:${SCRIPT_DIR}/docs/input:${SCRIPT_DIR}/docs/tools:${SCRIPT_DIR}/docs/appendix" \
   -o "${OUT}" \
   --pdf-engine=xelatex \
   --toc \
@@ -79,6 +85,7 @@ pandoc \
   -V mainfont="DejaVu Serif" \
   -V sansfont="DejaVu Sans" \
   -V monofont="DejaVu Sans Mono" \
+  -V header-includes='\usepackage{xurl}' \
   --metadata title="EXPO Manual"
 
 echo "PDF generated: ${OUT}"

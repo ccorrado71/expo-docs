@@ -99,7 +99,7 @@ The molecular volume V~mol~ can be estimated in one of two ways:
 - **18 Å³ rule**: count the non-hydrogen atoms of the chemical formula and multiply this
   number by 18 Å³;
 - **approximate atomic volumes**: 14 Å³ for C, 12 Å³ for N, 11 Å³ for O, 5 Å³ for H,
-  25 Å³ for S, 26 Å³ for Cl.
+  25 Å³ for S, 26 Å³ for Cl (see also [Appendix A](appendix/atomic-volumes.md)).
 
 For cimetidine, C~10~H~16~N~6~S, the cell volume is about 1280 Å³:
 

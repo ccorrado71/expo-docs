@@ -80,7 +80,8 @@ plausible space groups with their extinction symbol and probability (FoM):
 
 ![List of plausible space groups](images/spacegroup/sg_list.png)
 
-In general several space groups share the same extinction symbol (e.g. *P* 2/*n* and
+The extinction symbols and the corresponding space groups are listed in
+[Appendix B](appendix/extinction-symbols.md). In general several space groups share the same extinction symbol (e.g. *P* 2/*n* and
 *P* *n* for the extinction symbol *P* 1 *n* 1), but sometimes only one space group
 corresponds to an extinction symbol (e.g. *P* 2~1~/*n* for *P* 1 2~1~/*n* 1).
 

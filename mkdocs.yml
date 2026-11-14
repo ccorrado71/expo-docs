@@ -50,6 +50,9 @@ nav:
     - Overview: tools/index.md
     - Geometry optimization: tools/geometry-optimization.md
     - Bond valence sum: tools/bond-valence.md
+  - Appendices:
+    - "A: Average volume of the atoms": appendix/atomic-volumes.md
+    - "B: Extinction symbols": appendix/extinction-symbols.md
 
 markdown_extensions:
   - admonition

@@ -290,7 +290,7 @@ content is typed, EXPO displays:
 
 Content Volume
 :   an approximate cell volume, computed as the sum of the average volumes of the
-    supplied atoms. It should be close to the cell volume computed from the cell
+    supplied atoms (see [Appendix A](appendix/atomic-volumes.md)). It should be close to the cell volume computed from the cell
     parameters, shown below them.
 
 Volume per Atom
