@@ -120,7 +120,8 @@ with the same systematic absences (same extinction symbol) cannot be distinguish
 case of ambiguity, more space groups should be tried in the structure solution step; a
 good choice is to start from the most frequent one.
 
-Click **OK** to accept the selected space group and continue the structure solution.
+Click **OK** to accept the selected space group and continue the structure solution
+(see [Direct Methods](direct-methods/index.md)).
 The results can be saved in an EXPO project (`.expo`) with **File → Save Project As**,
 and reloaded with **File → Load Project**. The list of space groups remains available
 from **Pattern → Spacegroup → Space Group List**.

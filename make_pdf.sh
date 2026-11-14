@@ -17,6 +17,12 @@ PAGES=(
   input-file.md
   indexing.md
   space-group.md
+  direct-methods/index.md
+  direct-methods/extraction.md
+  direct-methods/normalization.md
+  direct-methods/invariants.md
+  direct-methods/phasing.md
+  direct-methods/fourier.md
 )
 
 # MkDocs admonitions (!!! / ???) are not understood by pandoc:
@@ -53,7 +59,7 @@ done
 pandoc \
   "${SOURCES[@]}" \
   --from=markdown-implicit_figures+link_attributes \
-  --resource-path="${SCRIPT_DIR}/docs" \
+  --resource-path="${SCRIPT_DIR}/docs:${SCRIPT_DIR}/docs/direct-methods" \
   -o "${OUT}" \
   --pdf-engine=xelatex \
   --toc \

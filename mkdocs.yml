@@ -31,6 +31,13 @@ nav:
   - Preparing the input file: input-file.md
   - Indexing: indexing.md
   - Space Group Determination: space-group.md
+  - Direct Methods:
+    - Overview: direct-methods/index.md
+    - Extraction of the intensities: direct-methods/extraction.md
+    - Normalization: direct-methods/normalization.md
+    - Structure invariants: direct-methods/invariants.md
+    - Phasing by the tangent formula: direct-methods/phasing.md
+    - Fourier map and model optimization: direct-methods/fourier.md
 
 markdown_extensions:
   - admonition

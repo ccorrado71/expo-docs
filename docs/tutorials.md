@@ -168,7 +168,7 @@ correct crystal structure.
 In a default run, Direct Methods generate several phasing trials. At most 20 of them
 are stored, ranked in decreasing order of a combined figure of merit (CFOM), and the
 trial with the highest CFOM is used for the structure solution. When this trial does not
-lead to the correct structure, the **ALLTRIALS** procedure explores the remaining stored
+lead to the correct structure, the [**ALLTRIALS**](direct-methods/index.md#exploring-all-the-trials-alltrials) procedure explores the remaining stored
 trials looking for the correct solution. From the graphical interface:
 
 1. select **Solve → Explore Trials**;
