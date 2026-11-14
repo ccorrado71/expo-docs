@@ -80,6 +80,11 @@ and `C*` all the atoms of an element (here carbon).
 :   activate the dynamical occupancy correction (DOC), for all atoms or only for the
     listed ones (e.g. `doc Ni1`).
 
+`nodoc atom1 atom2 …`
+:   exclude the listed atoms from the DOC; e.g. `doc` followed by
+    `nodoc C* N* O10` applies the DOC to all atoms except C, N and O10 (see
+    [Example 4](examples.md#example-4-alpo-m)).
+
 `extdof atom [translation rotation]`
 :   fix (0) or refine (1, default) the translation and rotation of the fragment
     containing *atom*. Example: `extdof Si1 0 0` fixes the position and orientation of
@@ -127,7 +132,8 @@ and `C*` all the atoms of an element (here carbon).
     atoms are constrained to 1.2 times that of the atom they are bonded to. `overall`:
     one overall ADP; `species`: one ADP per element; `molecules`: one ADP per fragment;
     `atoms`: independent ADPs for the listed atoms (`*` and `C*` allowed, e.g.
-    `optimadp atoms *`); `groups`: the listed atoms share the same ADP.
+    `optimadp atoms *`); `groups`: the listed atoms share the same ADP. `refinetf` is a
+    synonym of `optimadp`.
 
 `po h k l`
 :   activate the March–Dollase preferred orientation correction along the direction

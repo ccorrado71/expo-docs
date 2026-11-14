@@ -267,6 +267,9 @@ function.
 
 Restraints can also help: see [Restraints](directives.md#restraints).
 
+The [Examples](examples.md) show how these strategies are applied to challenging
+structures (flexible molecules, conformer scans, inorganic frameworks).
+
 ## References
 
 - Altomare, A., Corriero, N., Cuocci, C., Moliterni, A. & Rizzi, R. (2013).

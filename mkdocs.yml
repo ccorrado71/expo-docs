@@ -46,6 +46,7 @@ nav:
     - Overview: direct-space/index.md
     - Directives and restraints: direct-space/directives.md
     - Parallel execution: direct-space/parallel.md
+    - Examples: direct-space/examples.md
   - Rietveld Refinement: rietveld.md
   - Tools:
     - Overview: tools/index.md

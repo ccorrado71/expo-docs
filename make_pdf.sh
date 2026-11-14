@@ -29,6 +29,7 @@ PAGES=(
   direct-space/index.md
   direct-space/directives.md
   direct-space/parallel.md
+  direct-space/examples.md
   rietveld.md
   tools/index.md
   tools/geometry-optimization.md
