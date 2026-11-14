@@ -45,6 +45,7 @@ nav:
     - Overview: direct-space/index.md
     - Directives and restraints: direct-space/directives.md
     - Parallel execution: direct-space/parallel.md
+  - Rietveld Refinement: rietveld.md
 
 markdown_extensions:
   - admonition

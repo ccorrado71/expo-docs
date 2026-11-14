@@ -47,6 +47,12 @@ activate non-default procedures, are described in the pages linked in the table.
 |---------|-------------|
 | `%sanneal` (or `%sannel`) | structure solution by [direct-space methods](../direct-space/index.md) |
 
+## Refinement
+
+| Command | Description |
+|---------|-------------|
+| `%rietveld` | [Rietveld refinement](../rietveld.md) of the structure model |
+
 ## Order of the commands
 
 Commands must satisfy the following conditions:
@@ -60,7 +66,9 @@ Commands must satisfy the following conditions:
 - `%fourier` must follow `%phase`;
 - `%patterson` must follow `%normal`;
 - `%sanneal` must follow `%data`;
-- `%polyhedra` must follow `%extraction` and `%fragment`.
+- `%polyhedra` must follow `%extraction` and `%fragment`;
+- `%rietveld` requires a structure model (e.g. from `%fragment` or from a structure
+  solution).
 
 ## The `%export` command
 

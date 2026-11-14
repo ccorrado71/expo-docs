@@ -28,6 +28,7 @@ PAGES=(
   direct-space/index.md
   direct-space/directives.md
   direct-space/parallel.md
+  rietveld.md
 )
 
 # MkDocs admonitions (!!! / ???) are not understood by pandoc:

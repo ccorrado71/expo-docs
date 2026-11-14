@@ -115,7 +115,7 @@ follow `%extraction` and `%fragment`.
 |-----------|-------------|
 | `octahedron n d tol1 tol2` | octahedral coordination around the cation *n* (order number in the fragment file); *d* is the expected cation–anion distance, *tol1* and *tol2* the tolerances on distances and angles |
 | `tetrahedron n d tol1 tol2` | as `octahedron`, for a tetrahedral coordination |
-| `missing n1 n2 El tetrahedron\|octahedron d tol1 tol2` | locate a missing cation of element *El* between the cations *n1* and *n2* (order numbers in the fragment file or in the list of Fourier peaks), with tetrahedral or octahedral coordination; *d* is the expected cation–anion distance, *tol1* and *tol2* the tolerances on distances and angles (default 0.3) |
+| `missing n1 n2 El type d tol1 tol2` | locate a missing cation of element *El* between the cations *n1* and *n2* (order numbers in the fragment file or in the list of Fourier peaks); *type* is `tetrahedron` or `octahedron`; *d* is the expected cation–anion distance, *tol1* and *tol2* the tolerances on distances and angles (default 0.3) |
 
 **Example 1.** POLPO1 locates the light atoms around the chromium cations listed in
 `crox_cr.fra`.

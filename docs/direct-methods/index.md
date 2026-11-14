@@ -236,7 +236,7 @@ decomposition of the pattern or the performance of Direct Methods.
   help (directive `bfactor` of [`%normal`](normalization.md)).
 - Consider alternative space groups (directive `spacegroup` of `%data`).
 - When the solution is still incomplete, difference or combined Fourier maps
-  (F~o~ − F~c~, 2F~o~ − F~c~, F~o~) and/or Rietveld refinement can be computed from
+  (F~o~ − F~c~, 2F~o~ − F~c~, F~o~) and/or [Rietveld refinement](../rietveld.md) can be computed from
   **Refine → Fourier** and **Refine → Rietveld**.
 
 ## References
