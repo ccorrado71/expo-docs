@@ -27,7 +27,7 @@ The input file should contain at least two commands:
 
 Further commands, with their directives, are added according to the tasks to perform:
 mainly [indexing](indexing.md), [space group determination](space-group.md), structure solution by [Direct Methods](direct-methods/index.md) or by
-direct-space methods, and other non-default strategies.
+[direct-space methods](direct-space/index.md), and other non-default strategies.
 
 ## Example
 

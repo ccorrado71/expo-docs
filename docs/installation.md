@@ -321,8 +321,7 @@ expo merca.xy
 | `--auto`    | Runs EXPO with the graphical interface in automatic mode: the program starts, runs and exits without user interaction |
 
 If EXPO was built with MPI support, the direct-space structure solution can run in
-parallel with `mpirun`; the parallel execution is described in a dedicated section of
-this documentation.
+parallel with `mpirun`, as described in [Parallel execution](direct-space/parallel.md).
 
 ## Running the examples
 

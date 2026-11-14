@@ -186,7 +186,8 @@ in Tutorial 1.
 ## Tutorial 3 – Paracetamol: direct-space methods
 
 This tutorial guides you through the solution of paracetamol (form I polymorph) by
-direct-space methods, using the simulated annealing algorithm.
+direct-space methods, using the simulated annealing algorithm (see
+[Direct Space Methods](direct-space/index.md)).
 
 ![Paracetamol](images/tutorials/paracetamol.png){ width="350" }
 

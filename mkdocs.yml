@@ -38,6 +38,10 @@ nav:
     - Structure invariants: direct-methods/invariants.md
     - Phasing by the tangent formula: direct-methods/phasing.md
     - Fourier map and model optimization: direct-methods/fourier.md
+  - Direct Space Methods:
+    - Overview: direct-space/index.md
+    - Directives and restraints: direct-space/directives.md
+    - Parallel execution: direct-space/parallel.md
 
 markdown_extensions:
   - admonition

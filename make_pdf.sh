@@ -23,6 +23,9 @@ PAGES=(
   direct-methods/invariants.md
   direct-methods/phasing.md
   direct-methods/fourier.md
+  direct-space/index.md
+  direct-space/directives.md
+  direct-space/parallel.md
 )
 
 # MkDocs admonitions (!!! / ???) are not understood by pandoc:
@@ -59,7 +62,7 @@ done
 pandoc \
   "${SOURCES[@]}" \
   --from=markdown-implicit_figures+link_attributes \
-  --resource-path="${SCRIPT_DIR}/docs:${SCRIPT_DIR}/docs/direct-methods" \
+  --resource-path="${SCRIPT_DIR}/docs:${SCRIPT_DIR}/docs/direct-methods:${SCRIPT_DIR}/docs/direct-space" \
   -o "${OUT}" \
   --pdf-engine=xelatex \
   --toc \
