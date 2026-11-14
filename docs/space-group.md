@@ -21,7 +21,7 @@ results (Altomare *et al.*, 2004, 2005, 2007).
 ### From an input file
 
 Create a new input file (extension `.exp`) or modify an existing one with a text editor
-(see [Preparing the input file](input-file.md)). A typical input file for the space
+(see [Preparing the input file](input/index.md)). A typical input file for the space
 group determination of cimetidine, starting from the indexed cell, is:
 
 ```text

@@ -14,7 +14,9 @@ PAGES=(
   download.md
   installation.md
   tutorials.md
-  input-file.md
+  input/index.md
+  input/commands.md
+  input/data.md
   indexing.md
   space-group.md
   direct-methods/index.md
@@ -62,7 +64,7 @@ done
 pandoc \
   "${SOURCES[@]}" \
   --from=markdown-implicit_figures+link_attributes \
-  --resource-path="${SCRIPT_DIR}/docs:${SCRIPT_DIR}/docs/direct-methods:${SCRIPT_DIR}/docs/direct-space" \
+  --resource-path="${SCRIPT_DIR}/docs:${SCRIPT_DIR}/docs/direct-methods:${SCRIPT_DIR}/docs/direct-space:${SCRIPT_DIR}/docs/input" \
   -o "${OUT}" \
   --pdf-engine=xelatex \
   --toc \

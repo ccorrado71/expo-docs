@@ -20,7 +20,7 @@ To solve a structure with EXPO you need an input file (`.exp`), which can be:
   *Structure solution* by *Direct methods* and supplying the data file, the radiation,
   the cell parameters, the space group and the cell content;
 - written or modified with a text editor (see
-  [Preparing the input file](../input-file.md)) and loaded with **File → Load & Go**.
+  [Preparing the input file](../input/index.md)) and loaded with **File → Load & Go**.
 
 The cell parameters and the space group are assumed to be known (see
 [Indexing](../indexing.md) and [Space group determination](../space-group.md)).

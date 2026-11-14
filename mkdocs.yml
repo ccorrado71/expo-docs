@@ -28,7 +28,10 @@ nav:
   - Download: download.md
   - Installation: installation.md
   - Tutorials: tutorials.md
-  - Preparing the input file: input-file.md
+  - Input file:
+    - Preparing the input file: input/index.md
+    - Commands: input/commands.md
+    - The %data command: input/data.md
   - Indexing: indexing.md
   - Space Group Determination: space-group.md
   - Direct Methods:

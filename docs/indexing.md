@@ -31,7 +31,7 @@ EXPO can index a powder pattern in three ways:
 ### 1. From an input file
 
 Create a new input file (extension `.exp`) or modify an existing one, written with EXPO
-or with a text editor (see [Preparing the input file](input-file.md)). Load it with
+or with a text editor (see [Preparing the input file](input/index.md)). Load it with
 **File → Load & Go** and use the **Next** button of the toolbar to perform the steps of
 the indexing procedure.
 
@@ -191,7 +191,8 @@ not larger than 10 Å.
 
 ### Directives of `%data`
 
-The following directives of `%data` control the list of peaks passed to the indexing:
+The following directives of `%data` control the list of peaks passed to the indexing
+(see [The `%data` command](input/data.md) for all the directives):
 
 | Directive               | Meaning                                                              |
 |-------------------------|----------------------------------------------------------------------|

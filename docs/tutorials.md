@@ -62,7 +62,7 @@ The `%data` command provides the minimal required information: the name of the d
 file, the wavelength and the type of radiation (when different from laboratory X-rays).
 `%ntreor` activates the indexing process and `%continue` the *ab initio* structure
 solution. More information on the input file is given in
-[Preparing the input file](input-file.md).
+[Preparing the input file](input/index.md).
 
 ### Indexing
 
