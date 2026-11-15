@@ -50,8 +50,8 @@ The EXPO packages are distributed through public links on cnrbox. The script
 `scripts/make_download_page.py` creates the links and generates:
 
 - `docs/download.md`, the download page;
-- `docs/updates.json`, read by EXPO (**Help → Check for Updates**, Linux and macOS)
-  to notify users of a new version. It is published at
+- `docs/updates.json`, read by EXPO (**Help → Check for Updates**) to notify users of
+  a new version. It is published at
   <https://ccorrado71.github.io/expo-docs/updates.json>: this URL is compiled into
   EXPO and must not change.
 

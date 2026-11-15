@@ -9,8 +9,8 @@ desktop client) the script:
   2. reuses the existing public link of the file, or creates a new one
      (read-only, no password, no expiration);
   3. writes docs/download.md, grouping the files by version and platform;
-  4. writes docs/updates.json, read by EXPO (Help > Check for Updates) on Linux
-     and macOS to notify users of a new version. It is published at
+  4. writes docs/updates.json, read by EXPO (Help > Check for Updates) to
+     notify users of a new version. It is published at
      https://ccorrado71.github.io/expo-docs/updates.json: this URL is compiled
      into EXPO and must not change.
 
@@ -48,9 +48,9 @@ SHARE_NAME = "EXPO download"
 DOWNLOAD_PAGE = "https://ccorrado71.github.io/expo-docs/download.html"
 
 # Platforms of the EXPO updater (keys of updates.json) and the package platforms
-# that provide them. Windows is not listed: it is updated by the Qt IFW
-# maintenance tool, not by updates.json.
-UPDATER_PLATFORMS = {"linux": "Linux", "osx": "macOS"}
+# that provide them. On Windows, versions up to 2.3.13 (or built with
+# -DWINDOWS_IFW_UPDATER=ON) use the Qt IFW maintenance tool instead.
+UPDATER_PLATFORMS = {"windows": "Windows", "linux": "Linux", "osx": "macOS"}
 
 # Ubuntu codenames used in the names of the .deb packages
 UBUNTU = {

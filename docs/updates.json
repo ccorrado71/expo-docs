@@ -1,5 +1,11 @@
 {
   "updates": {
+    "windows": {
+      "latest-version": "2.3.13",
+      "open-url": "https://ccorrado71.github.io/expo-docs/download.html",
+      "download-url": "https://cnrbox.cnr.it/owncloud/index.php/s/yvtrtjCra27YfJl/download",
+      "changelog": "EXPO 2.3.13 is available on the download page."
+    },
     "linux": {
       "latest-version": "2.3.13",
       "open-url": "https://ccorrado71.github.io/expo-docs/download.html",
