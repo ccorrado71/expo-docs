@@ -21,6 +21,7 @@ docs/javascripts/     MathJax configuration
 mkdocs.yml            MkDocs configuration (site navigation, theme, extensions)
 requirements.txt      Python dependencies for building the site
 make_pdf.sh           script that generates the PDF manual
+scripts/              make_download_page.py: download page and updates.json
 .github/workflows/    GitHub Actions workflow for GitHub Pages deployment
 ```
 
@@ -42,6 +43,27 @@ bash make_pdf.sh      # generates expo_manual.pdf
 
 When adding a new page, add it both to the `nav` section of `mkdocs.yml` and to the
 `PAGES` list in `make_pdf.sh`.
+
+## Releasing a new EXPO version
+
+The EXPO packages are distributed through public links on cnrbox. The script
+`scripts/make_download_page.py` creates the links and generates:
+
+- `docs/download.md`, the download page;
+- `docs/updates.json`, read by EXPO (**Help → Check for Updates**, Linux and macOS)
+  to notify users of a new version. It is published at
+  <https://ccorrado71.github.io/expo-docs/updates.json>: this URL is compiled into
+  EXPO and must not change.
+
+Steps:
+
+1. copy the new packages to `~/cnrbox/software/expo_packages` and wait for the ownCloud
+   client to upload them;
+2. run `python3 scripts/make_download_page.py` (credentials in `~/.netrc`, see the
+   script header);
+3. regenerate the PDF manual and copy it into EXPO:
+   `bash make_pdf.sh ~/expo2/share/expo/docs/expo_manual.pdf`;
+4. commit and push `docs/download.md` and `docs/updates.json`.
 
 ## Citing EXPO
 

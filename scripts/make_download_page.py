@@ -8,7 +8,11 @@ desktop client) the script:
      (i.e. the sync client has finished uploading it);
   2. reuses the existing public link of the file, or creates a new one
      (read-only, no password, no expiration);
-  3. writes docs/download.md, grouping the files by version and platform.
+  3. writes docs/download.md, grouping the files by version and platform;
+  4. writes docs/updates.json, read by EXPO (Help > Check for Updates) on Linux
+     and macOS to notify users of a new version. It is published at
+     https://ccorrado71.github.io/expo-docs/updates.json: this URL is compiled
+     into EXPO and must not change.
 
 Credentials are read from ~/.netrc, e.g.:
 
@@ -39,7 +43,14 @@ SERVER = "https://cnrbox.cnr.it/owncloud"
 SYNC_ROOT = Path.home() / "cnrbox"  # local folder synced with the root of the account
 LOCAL_DIR = SYNC_ROOT / "software" / "expo_packages"
 OUTPUT = Path(__file__).resolve().parent.parent / "docs" / "download.md"
+UPDATES = OUTPUT.with_name("updates.json")
 SHARE_NAME = "EXPO download"
+DOWNLOAD_PAGE = "https://ccorrado71.github.io/expo-docs/download.html"
+
+# Platforms of the EXPO updater (keys of updates.json) and the package platforms
+# that provide them. Windows is not listed: it is updated by the Qt IFW
+# maintenance tool, not by updates.json.
+UPDATER_PLATFORMS = {"linux": "Linux", "osx": "macOS"}
 
 # Ubuntu codenames used in the names of the .deb packages
 UBUNTU = {
@@ -220,6 +231,31 @@ def render(packages):
     return "\n".join(lines).rstrip() + "\n"
 
 
+def render_updates(packages):
+    """Return the content of updates.json for the EXPO updater.
+
+    For each platform, 'latest-version' is the most recent version with a package
+    for that platform. EXPO opens 'open-url' (the download page) when the user
+    accepts the update; 'download-url' is the direct link when the platform has a
+    single package of that version, otherwise the download page too.
+    """
+    updates = {}
+    for key, platform in UPDATER_PLATFORMS.items():
+        candidates = [p for p in packages if p["platform"] == platform and p["version"]]
+        if not candidates:
+            continue
+        latest = max((p["version"] for p in candidates), key=version_key)
+        files = [p for p in candidates if p["version"] == latest]
+        direct = files[0]["url"] if len(files) == 1 and files[0]["url"] else DOWNLOAD_PAGE
+        updates[key] = {
+            "latest-version": latest,
+            "open-url": DOWNLOAD_PAGE,
+            "download-url": direct,
+            "changelog": f"EXPO {latest} is available on the download page.",
+        }
+    return json.dumps({"updates": updates}, indent=2) + "\n"
+
+
 # ------------------------------------------------------------------------- main
 
 def main():
@@ -267,6 +303,9 @@ def main():
     args.output.write_text(render(packages), encoding="utf-8")
     print(f"\nWritten {args.output} ({len(packages)} files"
           + (f", {problems} skipped" if problems else "") + ")")
+    updates = args.output.with_name(UPDATES.name)
+    updates.write_text(render_updates(packages), encoding="utf-8")
+    print(f"Written {updates}")
     return 1 if problems else 0
 
 
