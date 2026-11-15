@@ -56,8 +56,10 @@ nav:
     - "A: Average volume of the atoms": appendix/atomic-volumes.md
     - "B: Extinction symbols": appendix/extinction-symbols.md
 
-# Draft pages: built but not linked from the navigation
+# Pages built but not in the navigation: drafts, and the changelog (linked
+# from the download page)
 not_in_nav: |
+  /changelog.md
   /rietveld-theory.md
   /superflip.md
 

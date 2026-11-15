@@ -50,6 +50,8 @@ The EXPO packages are distributed through public links on cnrbox. The script
 `scripts/make_download_page.py` creates the links and generates:
 
 - `docs/download.md`, the download page;
+- `docs/changelog.md`, a copy of `~/expo2/CHANGELOG.md` without the `[Unreleased]`
+  section, linked from the download page (use `--expo-dir` for another location);
 - `docs/updates.json`, read by EXPO (**Help → Check for Updates**) to notify users of
   a new version. It is published at
   <https://ccorrado71.github.io/expo-docs/updates.json>: this URL is compiled into
@@ -57,13 +59,14 @@ The EXPO packages are distributed through public links on cnrbox. The script
 
 Steps:
 
-1. copy the new packages to `~/cnrbox/software/expo_packages` and wait for the ownCloud
+1. in `~/expo2/CHANGELOG.md`, turn the `[Unreleased]` section into the new version;
+2. copy the new packages to `~/cnrbox/software/expo_packages` and wait for the ownCloud
    client to upload them;
-2. run `python3 scripts/make_download_page.py` (credentials in `~/.netrc`, see the
+3. run `python3 scripts/make_download_page.py` (credentials in `~/.netrc`, see the
    script header);
-3. regenerate the PDF manual and copy it into EXPO:
+4. regenerate the PDF manual and copy it into EXPO:
    `bash make_pdf.sh ~/expo2/share/expo/docs/expo_manual.pdf`;
-4. commit and push `docs/download.md` and `docs/updates.json`.
+5. commit and push `docs/download.md`, `docs/changelog.md` and `docs/updates.json`.
 
 ## Citing EXPO
 
