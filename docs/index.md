@@ -27,8 +27,8 @@ visualized and modified during the whole process.
 C. Giacovazzo,
 [A. Moliterni](https://www.ic.cnr.it/staff/moliterni-anna/),
 [R. Rizzi](https://www.ic.cnr.it/staff/rizzi-rosanna/),
-[N. Corriero](https://www.ic.cnr.it/staff/corriero-nicola/)
-and A. Falcicchio
+[N. Corriero](https://www.ic.cnr.it/staff/corriero-nicola/),
+and [A. Falcicchio](https://www.ic.cnr.it/staff/falcicchio-aurelia/)
 
 Institute of Crystallography – CNR, via Amendola 122/o, 70126 Bari, Italy
 
