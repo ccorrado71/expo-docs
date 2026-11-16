@@ -15,11 +15,6 @@ diffraction data:
 A graphical interface supports each step and allows the crystal structure to be
 visualized and modified during the whole process.
 
-!!! note "Work in progress"
-    This documentation is being migrated from the former EXPO website and will be
-    expanded progressively. New sections will cover installation, input file
-    preparation, the EXPO commands and each step of the solution process.
-
 ## Authors
 
 [A. Altomare](https://www.ic.cnr.it/staff/altomare-angela/),
