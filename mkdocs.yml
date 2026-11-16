@@ -28,13 +28,13 @@ nav:
   - Download: download.md
   - Installation: installation.md
   - Tutorials: tutorials.md
-  - Input file:
+  - Input File:
     - Preparing the input file: input/index.md
     - Commands: input/commands.md
     - The %data command: input/data.md
     - Structure files: input/structure-files.md
   - Indexing: indexing.md
-  - Space Group Determination: space-group.md
+  - Space Group: space-group.md
   - Direct Methods:
     - Overview: direct-methods/index.md
     - Extraction of the intensities: direct-methods/extraction.md
@@ -42,12 +42,12 @@ nav:
     - Structure invariants: direct-methods/invariants.md
     - Phasing by the tangent formula: direct-methods/phasing.md
     - Fourier map and model optimization: direct-methods/fourier.md
-  - Direct Space Methods:
+  - Direct Space:
     - Overview: direct-space/index.md
     - Directives and restraints: direct-space/directives.md
     - Parallel execution: direct-space/parallel.md
     - Examples: direct-space/examples.md
-  - Rietveld Refinement: rietveld.md
+  - Rietveld: rietveld.md
   - Tools:
     - Overview: tools/index.md
     - Geometry optimization: tools/geometry-optimization.md
@@ -76,6 +76,9 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+
+extra_css:
+  - stylesheets/extra.css
 
 extra_javascript:
   - javascripts/mathjax.js
