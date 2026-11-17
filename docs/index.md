@@ -29,7 +29,7 @@ Institute of Crystallography – CNR, via Amendola 122/o, 70126 Bari, Italy
 
 ## Citing EXPO
 
-If EXPO2014 is used in the solution process of a structure whose results are published
+If EXPO is used in the solution process of a structure whose results are published
 in a scientific paper, please include the following reference:
 
 > Altomare, A., Cuocci, C., Giacovazzo, C., Moliterni, A., Rizzi, R., Corriero, N. and Falcicchio, A.
