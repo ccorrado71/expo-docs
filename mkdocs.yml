@@ -1,8 +1,8 @@
 site_name: EXPO Documentation
 site_description: Crystal structure solution by powder diffraction data
 site_author: IC-CNR Bari
-site_url: https://ccorrado71.github.io/expo-docs/
-repo_url: https://github.com/ccorrado71/expo-docs
+site_url: https://iccnr-xtal.github.io/expo-docs/
+repo_url: https://github.com/iccnr-xtal/expo-docs
 repo_name: expo-docs
 docs_dir: docs
 site_dir: site

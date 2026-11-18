@@ -2,7 +2,7 @@
 
 User documentation of **EXPO** (crystal structure solution from powder diffraction
 data, IC-CNR Bari), built with MkDocs + Material and published on GitHub Pages at
-<https://ccorrado71.github.io/expo-docs/>. A PDF manual is generated from the same
+<https://iccnr-xtal.github.io/expo-docs/>. A PDF manual is generated from the same
 sources with pandoc.
 
 The documentation is in **English**; conversations with the user are in Italian.
@@ -99,7 +99,7 @@ writes `docs/download.md`, `docs/updates.json` and `docs/changelog.md` (copied f
 
 - Use `--dry-run` to check without creating links. Creating public links publishes
   files: ask the user before running without `--dry-run` when new packages are present.
-- `updates.json` is published at `https://ccorrado71.github.io/expo-docs/updates.json`.
+- `updates.json` is published at `https://iccnr-xtal.github.io/expo-docs/updates.json`.
   **This URL is compiled into EXPO and must never change.** Keys: `windows`, `linux`,
   `osx`, each with `latest-version`, `open-url`, `download-url`, `changelog`.
 

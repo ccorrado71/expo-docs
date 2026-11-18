@@ -5,7 +5,7 @@ diffraction data developed at the [Institute of Crystallography (IC-CNR), Bari](
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
-📖 Online documentation: <https://ccorrado71.github.io/expo-docs/>
+📖 Online documentation: <https://iccnr-xtal.github.io/expo-docs/>
 
 The site is built with [MkDocs](https://www.mkdocs.org/) and the
 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme, and is deployed
@@ -54,7 +54,7 @@ The EXPO packages are distributed through public links on cnrbox. The script
   section, linked from the download page (use `--expo-dir` for another location);
 - `docs/updates.json`, read by EXPO (**Help → Check for Updates**) to notify users of
   a new version. It is published at
-  <https://ccorrado71.github.io/expo-docs/updates.json>: this URL is compiled into
+  <https://iccnr-xtal.github.io/expo-docs/updates.json>: this URL is compiled into
   EXPO and must not change.
 
 Steps:

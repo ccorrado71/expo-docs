@@ -11,7 +11,7 @@ desktop client) the script:
   3. writes docs/download.md, grouping the files by version and platform;
   4. writes docs/updates.json, read by EXPO (Help > Check for Updates) to
      notify users of a new version. It is published at
-     https://ccorrado71.github.io/expo-docs/updates.json: this URL is compiled
+     https://iccnr-xtal.github.io/expo-docs/updates.json: this URL is compiled
      into EXPO and must not change.
   5. copies the CHANGELOG.md of the EXPO repository (~/expo2 by default) to
      docs/changelog.md, without the [Unreleased] section, linked from the
@@ -48,8 +48,8 @@ LOCAL_DIR = SYNC_ROOT / "software" / "expo_packages"
 OUTPUT = Path(__file__).resolve().parent.parent / "docs" / "download.md"
 UPDATES = OUTPUT.with_name("updates.json")
 SHARE_NAME = "EXPO download"
-DOWNLOAD_PAGE = "https://ccorrado71.github.io/expo-docs/download.html"
-CHANGELOG_PAGE = "https://ccorrado71.github.io/expo-docs/changelog.html"
+DOWNLOAD_PAGE = "https://iccnr-xtal.github.io/expo-docs/download.html"
+CHANGELOG_PAGE = "https://iccnr-xtal.github.io/expo-docs/changelog.html"
 EXPO_DIR = Path.home() / "expo2"  # EXPO source repository, for CHANGELOG.md
 
 # Platforms of the EXPO updater (keys of updates.json) and the package platforms
