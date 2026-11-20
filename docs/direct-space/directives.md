@@ -57,6 +57,7 @@ directive name: a longer or different word is not recognized.
 | `tfactor x` | temperature reduction factor, between 0 and 1 (default 0.90) |
 | `seed n` | seed of the random number generator |
 | `rand [n]` | randomize the internal and external degrees of freedom and the atomic parameters (if refined) of the starting model; *n* is an optional seed |
+| `contacts [mode]` | intermolecular contacts of the final models, listed in the output file as clashes, short contacts and contacts according to the overlap of the van der Waals radii (≥ 0.4 Å, 0.2–0.4 Å, < 0.2 Å). *mode* is `noh` (default: all atoms except hydrogen), `all` (all atoms) or `none` (no analysis). With `noh` the hydrogen atoms are still used to recognize hydrogen bonds, which are not listed as contacts |
 
 ## Directives for the model
 
